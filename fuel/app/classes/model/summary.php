@@ -65,7 +65,7 @@ class Model_Summary extends \Model_Crud
 	}
 	
 	public static function getWeek($time) {
-		return ($time - (((date("w",$time)-1)*60*60*24) + (date("G",$time)*60*60) + (date("i",$time)*60) + (date("s",$time))));
+		return ($time - (((date("w",$time) - 1)*60*60*24) + (date("G",$time)*60*60) + (date("i",$time)*60) + (date("s",$time))));
 	}
 	
 	public function getMemberName() {
